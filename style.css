@@ -1,12 +1,30 @@
-
-.container1 {
-    background-color: red;
+html {
+    box-sizing: border-box;
 }
 
-.container2 {
-    background-color: purple;
+.header {
+    background: dodgerblue;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: whitesmoke;
+    font-family: Lato, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container3 {
-    background-color: blue;
+.game-container {
+    width: 550px;
+    height: 600px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.5); 
 }

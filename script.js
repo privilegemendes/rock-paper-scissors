@@ -1,3 +1,38 @@
+const playerScoreElement = document.getElementById('playerScore');
+const playerChoiceElement = document.getElementById('playerChoice');
+
+const computerScoreElement = document.getElementById('computerScore');
+const computerChoiceElement = document.getElementById('computerChoice');
+
+const resultText = document.getElementById('resultText');
+
+const playerRock = document.getElementById('playerRock');
+const playerPaper = document.getElementById('playerPaper');
+const playerScissors = document.getElementById('playerScissors');
+
+const computerRock = document.getElementById('computerRock');
+const computerPaper = document.getElementById('computerPaper');
+const computerScissors = document.getElementById('computerScissors');
+
+const allGameIcons = document.querySelectorAll('.icons');
+
+const gameAlgorithm = {
+    rock: {name: 'Rock', defeats: ['scissors']},
+    paper: {name: 'Paper', defeats: ['rock']},
+    scissors: {name: 'Scissors', defeats: ['paper']},
+}
+
+
+
+
+
+
+
+
+
+
+
+// ----------------------------------------------------------------------
 document.getElementById("heading").style.color = "green";
 
 console.log("Hello!");

@@ -75,7 +75,16 @@ function updateScore(playerChoice) {
     resultText.textContent = "It's a tie";
   } else {
     const choice = choices[playerChoice];
-    console.log(choice.defeats.indexOf(playerChoice));
+    console.log(choice.defeats.indexOf(computerChoice));
+    if (choice.defeats.indexOf(computerChoice) > -1) {
+      resultText.textContent = "You won!";
+      playerScoreNumber++;
+      playerScoreElement.textContent = playerScoreNumber;
+    } else {
+      resultText.textContent = "You lose!";
+      computerScoreNumber++;
+      computerScoreElement.textContent = computerScoreNumber;
+    }
   }
 }
 

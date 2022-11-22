@@ -1,50 +1,69 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header {
-    background: dodgerblue;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: dodgerblue;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 body {
-    margin: 0;
-    min-height: 100vh;
-    background: linear-gradient(0deg ,#4383c3 20%, #30b4cb 90%);
-    font-family: Lato, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(0deg, #4383c3 20%, #30b4cb 90%);
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .game-container {
-    width: 550px;
-    height: 500px;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.5);
+  width: 800px;
+  height: 500px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.5);
 }
 
 .player-container {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .computer-container {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .result-container {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
-    border:none;
-    background: white;
+  border: none;
+  background: white;
+}
+
+.player-choice: {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.vertical-move:hover {
+  -webkit-animation: mover 0.5s infinite alternate;
+  animation: mover 0.5s inifinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
 }

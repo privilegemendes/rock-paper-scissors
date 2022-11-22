@@ -18,77 +18,129 @@
       <div class="header">
         <h1>Rock Paper Scissors</h1>
       </div>
-      <!-- Player Conatiner -->
+      <!-- Play Mode Container -->
+      <div class="play-mode container" id="playmode">
+        <img
+          rel="icon"
+          alt="Rock"
+          src="./assets/rock.png"
+          style="height: 200px; transform: scaleX(-1)"
+          class="player-choice"
+        />
+        <img
+          rel="icon"
+          alt="Rock"
+          src="./assets/rock.png"
+          style="height: 200px"
+          class="computer-choice"
+        />
+      </div>
+      <!-- Player Container -->
       <div class="player-container" id="player">
         <h2>
           You - <span id="playerScore">0</span>
           <span class="choice" id="playerChoice"> --- Choice</span>
         </h2>
-        <button class="btn" type="button" id="playerRock" onclick="select('rock')">
+        <button
+          class="btn"
+          type="button"
+          id="playerRock"
+          onclick="select('rock')"
+        >
           <img
             rel="icon"
             alt="Rock"
-            src="./vectors/hand-rock-svgrepo-com.svg"
-            style="height: 50px"
+            src="./assets/rock.png"
+            style="height: 150px"
+            class="vertical-move"
           />
         </button>
-        <button class="btn" type="button" id="playerPaper" onclick="select('paper')">
+        <button
+          class="btn"
+          type="button"
+          id="playerPaper"
+          onclick="select('paper')"
+        >
           <img
             rel="icon"
             alt="Paper"
-            src="./vectors/hand-paper-svgrepo-com.svg"
-            style="height: 50px"
+            src="./assets/paper.png"
+            style="height: 150px"
+            class="vertical-move"
           />
         </button>
-        <button  class="btn" type="button" id="playerScissors" onclick="select('scissors')">
+        <button
+          class="btn"
+          type="button"
+          id="playerScissors"
+          onclick="select('scissors')"
+        >
           <img
             rel="icon"
             alt="Scissors"
-            src="./vectors//hand-scissors-svgrepo-com.svg"
-            style="height: 50px"
+            src="./assets/scissors.png"
+            style="height: 150px"
+            class="vertical-move"
           />
         </button>
       </div>
-      <!-- Computer Conatiner -->
+
+      <!-- Play Mode Container
       <div class="computer-container" id="computer">
         <h2>
           Computer - <span id="computerScore">0</span>
           <span class="choice" id="computerChoice"> --- Choice</span>
         </h2>
-        <button class="btn" type="button" id="computerRock" onclick="select('rock')">
+        <button
+          class="btn"
+          type="button"
+          id="computerRock"
+          onclick="select('rock')"
+        >
           <img
             rel="icon"
             alt="Rock"
-            src="./vectors/hand-rock-svgrepo-com.svg"
+            src="./assets/rock.png"
             style="height: 50px"
           />
         </button>
-        <button class="btn" type="button" id="computerPaper" onclick="select('paper')">
+        <button
+          class="btn"
+          type="button"
+          id="computerPaper"
+          onclick="select('paper')"
+        >
           <img
             rel="icon"
             alt="Paper"
-            src="./vectors/hand-paper-svgrepo-com.svg"
+            src="./assets/paper.png"
             style="height: 50px"
           />
         </button>
-        <button  class="btn" class="btn" type="button" id="computerScissors" onclick="select('scisors')">
+        <button
+          class="btn"
+          class="btn"
+          type="button"
+          id="computerScissors"
+          onclick="select('scisors')"
+        >
           <img
             rel="icon"
             alt="Scissors"
-            src="./vectors//hand-scissors-svgrepo-com.svg"
+            src="./assets/scissors.png"
             style="height: 50px"
           />
         </button>
-      </div>
+      </div> -->
       <!-- Reset Icon -->
-      <button class="btn" type="button" id="computerScissors" onclick="select('reset')">
-      <img
-        rel="icon"
-        alt="Reset"
-        id="reset"
-        src="./vectors/sync-svgrepo-com.svg"
-        style="height: 50px"
-      />
+      <button class="btn" type="button" id="gameReset" onclick="resetAll()">
+        <img
+          rel="icon"
+          alt="Reset"
+          id="reset"
+          src="./vectors/sync-svgrepo-com.svg"
+          style="height: 50px"
+        />
       </button>
 
       <!-- Results Text -->
@@ -96,7 +148,7 @@
         <h3 class="result-text" id="resultText">You Won!</h3>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
 

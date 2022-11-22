@@ -23,16 +23,17 @@
         <img
           rel="icon"
           alt="Rock"
-          src="./assets/rock.png"
+          src="assets/rock.png"
           style="height: 200px; transform: scaleX(-1)"
-          class="player-choice"
+          id="computer-choice"
         />
+        <audio id="audio" src=""></audio>
         <img
           rel="icon"
           alt="Rock"
           src="./assets/rock.png"
           style="height: 200px"
-          class="computer-choice"
+          id="player-choice"
         />
       </div>
       <!-- Player Container -->
@@ -45,7 +46,7 @@
           class="btn"
           type="button"
           id="playerRock"
-          onclick="select('rock')"
+          onclick="handleClick('rock')"
         >
           <img
             rel="icon"
@@ -59,7 +60,7 @@
           class="btn"
           type="button"
           id="playerPaper"
-          onclick="select('paper')"
+          onclick="handleClick('paper')"
         >
           <img
             rel="icon"
@@ -73,7 +74,7 @@
           class="btn"
           type="button"
           id="playerScissors"
-          onclick="select('scissors')"
+          onclick="handleClick('scissors')"
         >
           <img
             rel="icon"
@@ -142,13 +143,24 @@
           style="height: 50px"
         />
       </button>
+      <button class="btn" type="button" id="gameReset" onclick="audioPlay()">
+        <img
+          rel="icon"
+          alt="Audio"
+          id="audio_switch"
+          src="./assets/audioOn.png"
+          style="height: 50px"
+        />
+      </button>
+
 
       <!-- Results Text -->
       <div class="result-container">
         <h3 class="result-text" id="resultText">You Won!</h3>
       </div>
     </div>
-    <script src="script.js" type="module"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
 

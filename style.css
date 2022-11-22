@@ -6,10 +6,9 @@ html {
   background: dodgerblue;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  //height: 50px;
+  overflow: hidden;
+
 }
 body {
   margin: 0;
@@ -22,16 +21,28 @@ body {
 }
 
 .game-container {
-  width: 800px;
-  height: 500px;
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.5);
+  //width: 800px;
+  //height: 500px;
+  //display: block;
+  //justify-content: center;
+  //align-items: center;
+  //background: white;
+  padding: 8px;
+  //border-radius: 4px;
+  //box-shadow: 0 10px 20px -4px rgba(0, 0, 0, 0.5);
+}
+.play-mode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .player-container {
+  display: flex;
   justify-content: center;
   align-items: center;
+  border: solid;
+  border-radius: 8px;
 }
 
 .computer-container {
@@ -46,12 +57,21 @@ body {
 
 .btn {
   border: none;
-  background: white;
+  //border-radius: 8px;
+  background: none;
+}
+
+.playmode-icons {
+  height: 200px;
 }
 
 .player-choice: {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.vertical-move {
+  height: 150px;
 }
 
 .vertical-move:hover {
@@ -65,5 +85,14 @@ body {
   }
   100% {
     transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .playmode-icons {
+    height: 150px;
+  }
+  .vertical-move {
+    height: 100px;
   }
 }

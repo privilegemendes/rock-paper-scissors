@@ -19,29 +19,26 @@
         <h1>Rock Paper Scissors</h1>
       </div>
       <!-- Play Mode Container -->
-      <div class="play-mode container" id="playmode">
+      <div class="play-mode-container" id="playmode">
         <img
           rel="icon"
           alt="Rock"
           src="assets/rock.png"
-          style="height: 200px; transform: scaleX(-1)"
+          style="transform: scaleX(-1)"
           id="computer-choice"
+          class="playmode-icons"
         />
         <audio id="audio" src=""></audio>
         <img
           rel="icon"
           alt="Rock"
           src="./assets/rock.png"
-          style="height: 200px"
           id="player-choice"
+          class="playmode-icons"
         />
       </div>
       <!-- Player Container -->
       <div class="player-container" id="player">
-        <h2>
-          You - <span id="playerScore">0</span>
-          <span class="choice" id="playerChoice"> --- Choice</span>
-        </h2>
         <button
           class="btn"
           type="button"
@@ -52,9 +49,9 @@
             rel="icon"
             alt="Rock"
             src="./assets/rock.png"
-            style="height: 150px"
             class="vertical-move"
           />
+          <h2>Rock</h2>
         </button>
         <button
           class="btn"
@@ -66,9 +63,9 @@
             rel="icon"
             alt="Paper"
             src="./assets/paper.png"
-            style="height: 150px"
             class="vertical-move"
           />
+          <h2>Paper</h2>
         </button>
         <button
           class="btn"
@@ -80,59 +77,16 @@
             rel="icon"
             alt="Scissors"
             src="./assets/scissors.png"
-            style="height: 150px"
             class="vertical-move"
           />
+          <h2>Scissors</h2>
         </button>
       </div>
+      <h2>
+        You - <span id="playerScore">0</span>
+        <span class="choice" id="playerChoice"> --- Choice</span>
+      </h2>
 
-      <!-- Play Mode Container
-      <div class="computer-container" id="computer">
-        <h2>
-          Computer - <span id="computerScore">0</span>
-          <span class="choice" id="computerChoice"> --- Choice</span>
-        </h2>
-        <button
-          class="btn"
-          type="button"
-          id="computerRock"
-          onclick="select('rock')"
-        >
-          <img
-            rel="icon"
-            alt="Rock"
-            src="./assets/rock.png"
-            style="height: 50px"
-          />
-        </button>
-        <button
-          class="btn"
-          type="button"
-          id="computerPaper"
-          onclick="select('paper')"
-        >
-          <img
-            rel="icon"
-            alt="Paper"
-            src="./assets/paper.png"
-            style="height: 50px"
-          />
-        </button>
-        <button
-          class="btn"
-          class="btn"
-          type="button"
-          id="computerScissors"
-          onclick="select('scisors')"
-        >
-          <img
-            rel="icon"
-            alt="Scissors"
-            src="./assets/scissors.png"
-            style="height: 50px"
-          />
-        </button>
-      </div> -->
       <!-- Reset Icon -->
       <button class="btn" type="button" id="gameReset" onclick="resetAll()">
         <img
@@ -152,7 +106,6 @@
           style="height: 50px"
         />
       </button>
-
 
       <!-- Results Text -->
       <div class="result-container">
